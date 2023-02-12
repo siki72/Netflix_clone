@@ -1,0 +1,15 @@
+<%- include("header.html", {title: "connection", connectedUser}) %>
+
+<boy id="connexion">
+  <div class="container">
+    <h1>Login</h1>
+    <p>please enter your login and password!</p>
+
+    <form action="/connexion" method="post">
+      <input type="text" name="email" placeholder="EMAIL" />
+      <input type="password" name="password" placeholder="PASSWORD" />
+      <button type="submit">login</button>
+    </form>
+  </div>
+</boy>
+<%- include("footer.html") %>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="style/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- bar de navigation -->
+    <nav>
+      <div class="gauche">
+        <img
+          src="https://i.ibb.co/XW2vnBh/Netflix-logo.png"
+          alt="logo"
+          height="40px"
+        />
+        <% if (connectedUser) { %>
+        <div class="onglets">
+          <p>acceuil</p>
+          <p>Serie tv</p>
+          <p>Films</p>
+          <p>Programme origineaux</p>
+          <p>Ajouts recents</p>
+          <p>Ma liste</p>
+        </div>
+      </div>
+
+      <div class="droite">
+        <p><i class="fas fa-search"></i></p>
+        <p><i class="fas fa-bell"></i></p>
+        <p><%= connectedUser[0].name %></p>
+        <form id="logout" action="/deconnexion" method="post">
+          <button id="lgo" type="submit">logout</button>
+        </form>
+      </div>
+      <%}else {%>
+      <p><a href="/connexion"></a></p>
+      <%} %>
+    </nav>
+  </body>
+</html>

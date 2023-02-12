@@ -1,0 +1,16 @@
+<%- include("header.html", {title: "inscription", connectedUser }) %>
+
+<boy id="connexion">
+  <div class="container">
+    <h1>Sign in</h1>
+    <p>please enter your Email and password!</p>
+
+    <form action="/inscription" method="post">
+      <input type="text" name="name" placeholder="name" />
+      <input type="text" name="email" placeholder="EMAIL" />
+      <input type="password" name="password" placeholder="PASSWORD" />
+      <button type="submit">sign in</button>
+    </form>
+  </div>
+</boy>
+<%- include("footer.html") %>

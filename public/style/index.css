@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between ;
+  color: white;
+  padding: 0 25px;
+}
+
+nav .gauche {
+  display: flex;
+  align-items: center;
+
+}
+
+nav .gauche img {
+  padding-top: 5px;
+}
+
+nav .gauche .onglets {
+  display: flex;
+  margin-left: 10px;
+  
+}
+
+nav .gauche .onglets p {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #909191;
+}
+
+nav .gauche .onglets p:hover{
+  color: white;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+nav .droite {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav .droite p {
+  margin-left: 10px;
+  cursor: pointer;
+
+}
+
+nav .droite p:nth-child(3){
+  margin-left: 10px;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.3rem
+  
+}
+
+/* bare de navigation finis ------------------------------------------------------ */
+
+/*--------------------------------------------------films et series ---------------------------------------------------*/
+.films-et-series {
+  background-color: #191a1a;
+  padding: 25px;
+}
+
+.films-et-series .section {
+  margin-bottom: 55px;
+}
+
+.films-et-series .section h2 {
+  color: white
+}
+
+.films-et-series .section .list {
+  display: flex;
+  overflow-x: auto;
+}
+
+.films-et-series .section .list a {
+  padding-left: 5px;
+}
+
+.films-et-series .section .list a:hover {
+  transform: scale(1.05);
+  transition: 0.25s;
+}
+.films-et-series .section .list a img {
+  height: 140px;
+}
+
+/*--------------------------------------------------fin films et series ---------------------------------------------------*/
+/*--------------------------------------------------footer ---------------------------------------------------*/
+
+footer {
+  background-color: black;
+  padding: 25px 100px;
+  color:#909191
+}
+footer .colums {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#connexion {
+  background-color: #191a1a;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container {
+text-align: center;
+display: block;
+width: 40%;
+color: aliceblue;
+border: 1px solid darkgray;
+background-color: black;
+}
+
+.container p {
+  color: #909191;
+  padding: 30px;
+  font-size: 0.7rem;
+  
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+  
+}
+
+form input {
+  width: 80%;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  border: 1px solid white;
+  background: transparent;
+  outline: none;
+  font-size: 1.1rem;
+}
+form input[type=submit] {
+  width: 30%;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.7s;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+  
+form input[type=submit]:hover {
+  background-color: aliceblue;
+  color: black;
+
+}
+#lgo {
+  padding: 10px;
+  background-color: rgb(28, 26, 26);
+  text-transform: uppercase;
+  border: 1px solid black;
+  color: white;
+  cursor: pointer;
+  transition: 0.7s;
+}
+button:hover {
+background: white;
+color: black;
+font-weight: bold;
+
+}
+
+button {
+  padding: 10px;
+  margin-top: 40px;
+  background-color: rgb(28, 26, 26);
+  text-transform: uppercase;
+  border: 1px solid black;
+  color: white;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+#logout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+

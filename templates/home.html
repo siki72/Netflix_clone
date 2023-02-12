@@ -1,0 +1,33 @@
+<%- include("header.html", {title: "Acceuil", connectedUser}) %>
+
+<section class="films-et-series">
+  <!-- les tendeces -->
+  <section class="section tendances">
+    <h2><%= titres.title1 %></h2>
+    <div class="list">
+      <% for(let link of td) { %>
+      <a href=""><img src="<%= link.link %>" alt="" /></a>
+      <% }%>
+    </div>
+  </section>
+  <!--****************************-->
+  <section class="section tendances">
+    <h2><%= titres.title2 %></h2>
+    <div class="list">
+      <% for(let i of sv) { %>
+      <a href=""><img src="<%= i.link %>" alt="" /></a>
+
+      <% }%>
+    </div>
+  </section>
+  <!--****************************-->
+  <section class="section tendances">
+    <h2><%= titres.title3 %></h2>
+    <div class="list">
+      <% av.forEach((item) => { %>
+      <a href=""><img src="<%= item.link %>" alt="" /></a>
+      <% })%>
+    </div>
+  </section>
+  <%- include("footer.html") %>
+</section>
